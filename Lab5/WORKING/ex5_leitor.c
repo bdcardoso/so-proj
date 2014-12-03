@@ -113,7 +113,7 @@ int reader(char  *file_to_open) {
 }
 
 
-void func_thread(){
+void *func_thread( void * argumentos){
     char *buffer = (char*)malloc(sizeof(char)*BUFFSCANF);
     while(1){
         read(STDIN, buffer, BUFFSCANF);
