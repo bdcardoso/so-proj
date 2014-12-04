@@ -20,19 +20,20 @@ int main(){
     pid_t pid_child1, pid_child2;
     int status;
     int nbytes;
-    int i;
-    sem_t *semaphores[NB_FILES];
-    char *sem_name=(char*)malloc(sizeof(char)*7);
+    //int i;
+    //sem_t *semaphores[NB_FILES];
+    //char *sem_name=(char*)malloc(sizeof(char)*7);
     
     /*for(i=0; i<NB_FILES; i++){
         sprintf(sem_name, "/semaf%d", i);
         if ( (semaphores[i] = sem_open(sem_name, O_CREAT, O_RDWR, 1) ) == SEM_FAILED){
             printf("no es pupu\n");
         }
-    }/*
+    }
     sem_wait((sem_t*)3);
 
-    /*child process #1 launch for writer*/
+    child process #1 launch for writer*/
+    
     if( (pid_child1 = fork()) == 0){
         
         execl("ex5_escritor", "ex5_escritor", NULL);

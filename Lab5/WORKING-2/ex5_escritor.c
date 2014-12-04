@@ -64,7 +64,7 @@ void init_myfiles () {
  +-------------------------------------------------------------------------------------*/
 
 void* thread_escritor (void* argument) {
-    int   i;
+    //int   i;
     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
     int index;
     char *file_to_open;

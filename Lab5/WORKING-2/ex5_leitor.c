@@ -25,7 +25,7 @@
 
 int reader(char  *file_to_open) {
     int fd;
-    char *buf = (char*)malloc(sizeof(char)*(BUFFSCANF-2));
+    //char *buf = (char*)malloc(sizeof(char)*(BUFFSCANF-2));
     //buf = file_to_open;
     //file_to_open = buf;
     //strncpy(buf, file_to_open, 2);
@@ -125,11 +125,12 @@ void *func_thread( void * argumentos){
 
 
 int main(){
-    char *buffer = (char*) malloc(sizeof(char)*NUM_REQUEST*BUFFSCANF);
-    char *buffer_scanf = (char *) malloc(sizeof(char)*NUM_SCAN*BUFFSCANF);
-    int n_read = 0, count=0, i;
-    char *ptr;
-    char buffer_mat[NUM_SCAN][BUFFSCANF];
+    //char *buffer = (char*) malloc(sizeof(char)*NUM_REQUEST*BUFFSCANF);
+    //char *buffer_scanf = (char *) malloc(sizeof(char)*NUM_SCAN*BUFFSCANF);
+    /*int n_read = 0, count=0; */
+    int i;
+    //char *ptr;
+    //char buffer_mat[NUM_SCAN][BUFFSCANF];
     pthread_t *t_id = (pthread_t*) malloc(sizeof(pthread_t)*NUM_SCAN);
     
 /*

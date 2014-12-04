@@ -6,7 +6,7 @@ EX5_LEITOR_EXE = ex5_leitor
 EX5_FINAL_FILES = ex5_final.c
 EX5_FINAL_EXE = ex5_final
 
-THREAD_FLAGS = -pthread
+THREAD_FLAGS =-Wall -pedantic -pthread
 
 all:build1 build2 build3
 
